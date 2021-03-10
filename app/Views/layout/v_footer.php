@@ -71,6 +71,12 @@
         });
     });
 </script>
+
+window.setTimout(function() {
+    $('.alert').fastradeTo(500, 0).slideUp(500, function() {
+        $(this).remove();
+    });
+}, 3000);
 </body>
 
 </html>
